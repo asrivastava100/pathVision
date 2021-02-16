@@ -356,8 +356,6 @@ let createFace = function(){
 }
 
 // Modified version of createPyramid for mobile devices. 
-// createSpiral makes use of sequences to find the number of left, right, up and down
-// moves to create the spiral. 
 
 let createPyramidM = function(elemId){
     
