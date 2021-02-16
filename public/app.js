@@ -2,7 +2,7 @@
 
 
 
-let container = document.getElementById("container");
+let container = document.getElementById("mainContainer");
 let grid = document.getElementById("mainGrid");
 let sENodeBtn = document.getElementById("sENodeBtn");
 let wallBtn = document.getElementById("wallBtn");
