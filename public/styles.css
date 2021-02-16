@@ -21,7 +21,7 @@ html, body{
     display: grid;
     margin: auto;
     height: 90vh;
-    width: 93%
+    width: 93%;
     row-gap:inherit;
     column-gap: inherit;
     background-color: #90caf1;
