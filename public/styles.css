@@ -19,7 +19,6 @@ html, body{
 
 #mainGrid{
     display: grid;
-    width: 90%;
     margin: auto;
     height: 90vh;
     row-gap:inherit;
