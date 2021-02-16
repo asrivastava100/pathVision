@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathVision | Main</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.2/css/bulma.min.css" integrity="sha512-byErQdWdTqREz6DLAA9pCnLbdoGGhXfU6gm1c8bkf7F51JVmUBlayGe2A31VpXWQP+eiJ3ilTAZHCR3vmMyybA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">PathVision
+            </a>
+            <a class = "navbar-item" id = "progress"></a>
+            
+            <a role = "button" class="navbar-burger" id = "burger1" aria-label="menu" aria-expanded="false" 
+            data-target = "navbarMain">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
+        </div>
+      
+        <div id="navbarMain" class="navbar-menu">
+            <div class="navbar-end">
+                <a class = "navbar-item" id = "status"></a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Algorithms
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" id = "BFSBtn">
+                            Breadth First Search
+                        </a>
+                        <a class="navbar-item" id = "DFSBtn">
+                            Depth First Search
+                        </a>
+                        <a class="navbar-item" id = "DijBtn">
+                            Dijkstra
+                        </a>
+                    
+                    </div>
+                </div>
+    
+                
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Examples
+                    </a>
+            
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" id = "spiralBtn">
+                            Spiral
+                        </a>
+                        <a class="navbar-item" id = "pyrBtn">
+                            Pyramid
+                        </a>
+                        <a class="navbar-item" id = "randBtn">
+                            Random
+                        </a>
+                        <a class="navbar-item" id = "faceBtn">
+                            Face
+                        </a>
+                    </div>
+
+
+                </div>
+                
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Set Parameters
+                    </a>
+            
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" id = "sENodeBtn">
+                            Start Node & End Node
+                        </a>
+                        <a class="navbar-item" id = "wallBtn">
+                            Draw Wall
+                        </a>
+                        <a class="navbar-item" id = "wallEBtn">
+                            Erase Wall
+                        </a>
+                        <a class="navbar-item" id = "resetBtn">
+                            Reset All
+                        </a>
+                    </div>
+
+
+                </div>
+    
+                
+                <a class="navbar-link is-arrowless" id = "findPathBtn">
+                    Find Path
+                </a>
+                  
+            </div>      
+
+        </div>
+
+    </nav>
+    
+      <div id= "container">
+        <div id="mainGrid">
+            
+        </div>
+    </div>
+    
+</body>
+
+<script src="app.js"></script>
+<script src="utilities.js"></script>
+<script src="examples.js"></script>
+<script src="pathFinder.js"></script>
+
+</html>

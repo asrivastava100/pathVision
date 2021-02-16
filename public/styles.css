@@ -1,0 +1,141 @@
+@keyframes colourGrid{
+    0%   {background-color:red; left:0px; top:0px;}
+    50%  {background-color:yellow; left:200px; top:0px;}
+    100%  {background-color:green; left:200px; top:200px;}
+}
+
+html, body{
+    background-color: #90caf1;
+}
+
+
+#container{
+    width:100%;
+    margin: 0;
+    background-color: #90caf1;
+    padding:0;
+    
+}
+
+#mainGrid{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    height: 90vh;
+    row-gap:inherit;
+    column-gap: inherit;
+    background-color: #90caf1;
+    
+}
+
+.gridSq{
+    
+    border: max(0.1vw, 0.8px) solid;
+    border-color: #f3f4f5;
+    
+    padding:0.8vw;
+    background-color: #90caf1;
+    float:left;
+    
+}
+
+.gridSq:hover{
+    background-color:#4814a7;
+}
+
+.wall{
+    background-color:#000000;
+}
+
+.startNode{
+    background-color:rgb(134, 228, 39);
+}
+
+.endNode{
+    background-color: #FF0000;
+}
+
+.weightNode{
+    background-color: mediumblue;
+}
+
+.dispMessage{
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.seen{
+     animation: colourGrid 2s linear forwards;  
+ }
+
+.found{
+    background-color: deeppink;
+    animation: colourGrid 2s linear forwards;
+ }
+
+.path{
+    border-color: green;
+}
+
+#status, #progress, .locked{
+    pointer-events: none;
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    @keyframes colourGrid {
+        0%   {background-color:red; left:0px; top:0px;}
+        50%  {background-color:yellow; left:200px; top:0px;}
+        100%  {background-color:chartreuse; left:200px; top:200px;}
+    }
+    
+    
+    .gridSq{
+        background-color: rgb(73, 73, 146);
+        
+        border:0.1vw solid;
+        border-color: #f3f4f5;
+        padding:0.9vw;
+        min-height: 0;
+        min-width: 0;
+        margin: 0;
+    
+    }
+
+    .gridSq:hover{
+        background-color:coral;
+     }
+    
+    .wall{
+        background-color:#FFFFFF;
+    }
+    
+    .startNode{
+        background-color:rgb(134, 228, 39);
+    }
+    
+    .endNode{
+        background-color: #FF0000;
+    }
+
+    #mainGrid{
+        width: 100%;
+        margin: 2vw;
+        padding-top: 1vh;
+    }
+
+    .seen{
+        animation: colourGrid 2s linear forwards;  
+    }
+   
+   .found{
+       background-color: deeppink;
+       animation: colourGrid 2s linear forwards;
+    }
+   
+   .path{
+       border-color: green;
+   }
+    
+}
